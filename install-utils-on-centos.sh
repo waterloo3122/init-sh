@@ -1,6 +1,6 @@
 #!/bin/bash
 #install utils
-yum install -y git tmux iftop net-tools vim
+yum install -y git tmux iftop net-tools vim bash-completion
 
 # config tmux
 cat << EOF >  ~/.tmux.conf
@@ -33,3 +33,14 @@ cat << EOF > ~/.gitconfig
 [alias]
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 EOF
+
+
+# last things to do mannually
+# config git bash completion
+echo '------------------------------------------------------';
+echo YOU NEED TO RUN 
+echo source /etc/bash_completion.d/git 
+echo OR 
+echo source /usr/share/bash-completion/completions/git 
+echo TO MAKE GIT BASH COMPLETION TO TAKE EFFECT
+echo '------------------------------------------------------';
