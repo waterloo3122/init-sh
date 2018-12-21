@@ -1,6 +1,6 @@
 #!/bin/bash
 #install utils
-yum install -y git tmux iftop net-tools vim bash-completion
+yum install -y git tmux iftop net-tools vim bash-completion wget gcc epel-release
 
 # config tmux
 cat << EOF >  ~/.tmux.conf
