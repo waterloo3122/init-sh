@@ -22,3 +22,14 @@ bind -n M-j resize-pane -D 5
 bind -n M-h resize-pane -L 5
 bind -n M-l resize-pane -R 5
 EOF
+
+# config git
+cat << EOF > ~/.gitconfig
+[push]
+        default = simple
+[user]
+        name = pp
+        email = panyouyi@licaimofang.com
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+EOF
