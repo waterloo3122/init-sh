@@ -8,5 +8,6 @@ yum-config-manager --enable remi-php56
 yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo php-fpm composer
 
 #set composer chinese mirror
+# DO NOT RUN AS ROOT
 composer config -g repo.packagist composer https://packagist.laravel-china.org
 
